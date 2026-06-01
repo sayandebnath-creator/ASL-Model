@@ -4,6 +4,7 @@ import torch.nn as nn
 from torchvision import models, transforms
 from PIL import Image
 import mediapipe as mp
+from collections import deque, Counter
 
 # Classes
 classes = [
@@ -56,6 +57,8 @@ cap = cv2.VideoCapture(0)
 label = ""
 confidence = 0
 roi = None
+
+prediction_buffer = deque(maxlen=10)
 
 while True:
     ret, frame = cap.read()
@@ -139,6 +142,11 @@ while True:
             confidence, pred = torch.max(probs, dim=1)
 
         label = classes[pred.item()]
+        
+        prediction_buffer.append(label)
+        most_common = Counter(prediction_buffer).most_common(1)[0][0]
+        label = most_common
+
         confidence = confidence.item() * 100
     # confidence = confidence.item() * 100
 
