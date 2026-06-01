@@ -49,8 +49,19 @@ while True:
         break
 
     # ROI box
-    x1, y1 = 100, 100
-    x2, y2 = 400, 400
+    # x1, y1 = 100, 100
+    # x2, y2 = 400, 400
+
+    # calculate the box from the frame size
+    h, w, _ = frame.shape
+
+    box_size = 400
+
+    x1 = (w - box_size) // 2
+    y1 = (h - box_size) // 2
+
+    x2 = x1 + box_size
+    y2 = y1 + box_size
 
     roi = frame[y1:y2, x1:x2]
 
