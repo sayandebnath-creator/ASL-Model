@@ -1,6 +1,6 @@
 venv/
 venv311/
+.gradio/
 __pycache__/
 *.pyc
-
-*.pth
+.DS_Store
