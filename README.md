@@ -1,3 +1,14 @@
+---
+title: ASL Sign Language Translator
+emoji: 🤟
+colorFrom: blue
+colorTo: green
+sdk: gradio
+sdk_version: "5.34.1"
+app_file: app.py
+pinned: false
+---
+
 # ASL Sign Language Translator
 
 A real-time American Sign Language (ASL) recognition system that uses computer vision and deep learning to identify hand gestures from a webcam feed.
