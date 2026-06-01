@@ -108,9 +108,5 @@ python webcam.py
 * Web deployment with Gradio
 * Mobile application support
 
-## License
-
-This project is licensed under the MIT License.
-
 ```
 ```
