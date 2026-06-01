@@ -51,4 +51,5 @@ demo = gr.Interface(
     title="ASL Sign Language Translator"
 )
 
-demo.launch()
+if __name__ == "__main__":
+    demo.launch()
