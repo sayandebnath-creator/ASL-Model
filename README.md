@@ -1,12 +1,12 @@
-ASL Sign Language Recognition
+# ASL Sign Language Recognition
 
-Features:
+## Features:
 - EfficientNet-B0 trained on ASL Alphabet dataset
 - Real-time webcam inference
 - MediaPipe hand tracking
 - Confidence score display
 
-Tech Stack:
+## Tech Stack:
 - Python
 - PyTorch
 - OpenCV
