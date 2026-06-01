@@ -29,3 +29,37 @@ Hand Crop
 Model Prediction
     ↓
 Letter Output
+
+
+# For learning ML
+
+We do not need Gradio.
+We've learned:
+
+- Dataset preparation
+- Transfer learning
+- PyTorch
+- Computer vision
+- OpenCV
+- MediaPipe
+- Real-time inference
+
+# Without gradio :-
+
+Someone sees your GitHub
+↓
+Must clone repo
+↓
+Install Python
+↓
+Install dependencies
+↓
+Run webcam.py
+
+# With gradio :- 
+
+Someone clicks a link
+↓
+Uploads image / uses webcam
+↓
+Sees prediction
