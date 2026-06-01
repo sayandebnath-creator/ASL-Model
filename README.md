@@ -107,6 +107,3 @@ python webcam.py
 * Indian Sign Language (ISL) support
 * Web deployment with Gradio
 * Mobile application support
-
-```
-```
